@@ -1,13 +1,24 @@
-# Template2D-Unity202015f1
+# Kinderrechner: 2 Zahlen addieren
 
 ### Project description: 
-Introduction/Project summary 
+This project serves to visualize the process for the implementation of a microgame. We use git / GitHub not only for version control, but also to display the individual steps (see projects) and for feedback (see issues). Please follow the individual cards in the project step by step to identify comprehension problems. Write down what your problem is and try 2 ways to solve it yourself. 
+
+DE: Aufgabenstellung
+
+Anforderung: Eine Freundin möchte für ihre Tochter (Volksschule) ein Web-basiertes Spiel zum Addieren üben von zwei Zahlen. 
+
+Die Aufgabe besteht darin, anhand dieser Anforderung ein Microgame für Browser (WebGL, 960x600) mit Unity 2D selbstständig zu erstellen. 
+1) Konzept inkl. Feedback 
+2) Aufteilung des Projekts in Einzelschritte (für Programmierung mittels GitHub Projects)
+3) Abarbeitung Einzelschritte
+4) Für Testen freigeben (Note im Readme)
 
 ### Development platform: 
 (OS, Unity Version, Visual Studio Version, used SDKs)
+Windows 10, Unity 2020.1.5f1, Visual Studio 2019
 
 ### Target platform: 
-WebGL, Mobile, VR Device incl. reference resolution 
+WebGL 960x600 reference resolution 
 
 ### Visuals: 
 Screenshots (concept and experience), Video
@@ -25,4 +36,4 @@ incl. progress in percent
 
 ### Lessons Learned: 
 
-Copyright by you :)
+Copyright by smeerws
