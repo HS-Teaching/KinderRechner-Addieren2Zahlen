@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class SwitchScene : MonoBehaviour
 {
+    private const string SceneName = "MainScene";
     public InputField playerName;
     public PlayerData playerData;
 
@@ -12,7 +13,7 @@ public class SwitchScene : MonoBehaviour
         playerData.playerName = playerName.text;
         playerData.maxResult = int.Parse(maxResult);
 
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene(SceneName);
     }
 
 }
