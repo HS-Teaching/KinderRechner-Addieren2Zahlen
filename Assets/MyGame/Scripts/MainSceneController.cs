@@ -1,63 +1,116 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI; // Required when Using UI elements.
 
 public class MainSceneController : MonoBehaviour
 {
-    enum CalulationUIElement{Text, InputField};
-    enum AdditionTerms {SummandA, SummandB, Sum};
-    enum AdditionCase {SummandAUnknown, SummandBUnknown, SumUnknown, SummandASummandBUnknown};
+    private enum AdditionTerms {SummandA, SummandB, Sum};
+    private enum AdditionCase {SummandAUnknown, SummandBUnknown, SumUnknown, SummandASummandBUnknown};
+    private int maxAdditionCases = System.Enum.GetValues(typeof(AdditionCase)).Length;
 
-    public PlayerData playerData;
-    public Text labelPlayerName;
-    public Text textTermA, textTermB, textTermResult;
-    public InputField inputFieldTermA, inputFieldTermB, inputFieldTermResult;
-    public Image bgimg;
-    
-    private GameObject[] additionUIElements;
-    private int[] termValues;
+    //UI Elements Drag & Drop in UnityEditor onto MainSceneController
+    [SerializeField] private PlayerData playerData;
+    [SerializeField] private Text labelPlayerName;
+    [SerializeField] private Text textTermA, textTermB, textTermResult;
+    [SerializeField] private InputField inputFieldTermA, inputFieldTermB, inputFieldTermResult;
+    [SerializeField] private Image bgimg;
+    [SerializeField] private Text labelCorrectionTermA, labelCorrectionTermB, labelCorrectionSum;
+    [SerializeField] private Text txtVarialbeAttempts;
+
+    //Private variables needed in this script
+    private GameObject[] dynamicUIElements; // contains for 3 positions (A, B, Sum) either input field or text depending on AdditionCase
+    private int[] termValues; // contains integer values of the 3 terms
     private AdditionCase randomCase;
+    private const int MaxSum = 10;
+    private const string FormatValues = "0.##";
+
+    SwitchScene switchScene;
 
     // Start is called before the first frame update
     void Start()
     {
+        switchScene = GameObject.FindObjectOfType<SwitchScene>();
+
+        //Set/Get ScriptableObject Data
+        playerData.countAttempts++;
+        txtVarialbeAttempts.text = playerData.countAttempts.ToString(FormatValues);
         labelPlayerName.text = playerData.playerName;
 
-        additionUIElements = new GameObject[3];
+        dynamicUIElements = new GameObject[3];
+        
         SetAddition();
+
     }
 
     private void SetAddition()
     {
-       
         randomCase = GetRandomAdditionCase();
-        //randomCase = AdditionCase.SummandASummandBUnknown;
-        SetupUIAddition(randomCase);
-        SetKnownAdditionValues(randomCase);
+        randomCase = AdditionCase.SummandAUnknown;
+        SetupAdditionUI(randomCase);
+        SetGeneratedAdditionValues(randomCase);
+        SetCorrectionLabelsActive(false);
     }
 
-    private void SetKnownAdditionValues(AdditionCase randCase)
+    private AdditionCase GetRandomAdditionCase()
     {
-        termValues = GenerateThreeTerms(10);
+        return (AdditionCase)UnityEngine.Random.Range(0, maxAdditionCases);
+    }
 
-        int i = 0;
-        foreach(int x in termValues)
+    private void SetupAdditionUI(AdditionCase curCase)
+    {
+        SetDynamicUIElementsInactive(); //Text and InputFields are invisible
+
+        switch (curCase)
         {
-            Debug.Log(i + " " +x);
-            i++;
+            case AdditionCase.SummandAUnknown:
+                AddAdditionUIElement(AdditionTerms.SummandA, inputFieldTermA.gameObject);
+                AddAdditionUIElement(AdditionTerms.SummandB, textTermB.gameObject);
+                AddAdditionUIElement(AdditionTerms.Sum, textTermResult.gameObject);
+                break;
+            case AdditionCase.SummandBUnknown:
+                AddAdditionUIElement(AdditionTerms.SummandA, textTermA.gameObject);
+                AddAdditionUIElement(AdditionTerms.SummandB, inputFieldTermB.gameObject);
+                AddAdditionUIElement(AdditionTerms.Sum, textTermResult.gameObject);
+                break;
+            case AdditionCase.SumUnknown:
+                AddAdditionUIElement(AdditionTerms.SummandA, textTermA.gameObject);
+                AddAdditionUIElement(AdditionTerms.SummandB, textTermB.gameObject);
+                AddAdditionUIElement(AdditionTerms.Sum, inputFieldTermResult.gameObject);
+                break;
+            case AdditionCase.SummandASummandBUnknown:
+                AddAdditionUIElement(AdditionTerms.SummandA, inputFieldTermA.gameObject);
+                AddAdditionUIElement(AdditionTerms.SummandB, inputFieldTermB.gameObject);
+                AddAdditionUIElement(AdditionTerms.Sum, textTermResult.gameObject);
+                break;
         }
+
+        //Activate all elements added to dynamicUIElements
+        foreach (GameObject elem in dynamicUIElements)
+        {
+            elem.SetActive(true);
+        }
+    }
+
+    private void AddAdditionUIElement(AdditionTerms term, GameObject uiElement)
+    {
+        dynamicUIElements[(int)term] = uiElement;
+    }
+
+    private void SetGeneratedAdditionValues(AdditionCase randCase)
+    {
+        termValues = GenerateThreeAdditionTerms(MaxSum);
 
         switch (randCase)
         {
             case AdditionCase.SummandAUnknown:
-                textTermA.text = termValues[(int)AdditionTerms.SummandA].ToString("0.##");
-                textTermResult.text = termValues[(int)AdditionTerms.Sum].ToString("0.##");
-                break;
-            case AdditionCase.SummandBUnknown:
                 textTermB.text = termValues[(int)AdditionTerms.SummandB].ToString("0.##");
                 textTermResult.text = termValues[(int)AdditionTerms.Sum].ToString("0.##");
                 break;
-            case AdditionCase.SumUnknown:
+            case AdditionCase.SummandBUnknown:
                 textTermA.text = termValues[(int)AdditionTerms.SummandA].ToString("0.##");
+                textTermResult.text = termValues[(int)AdditionTerms.Sum].ToString("0.##");
+                break;
+            case AdditionCase.SumUnknown:
+                textTermA.text = termValues[(int)AdditionTerms.SummandA].ToString(FormatValues);
                 textTermB.text = termValues[(int)AdditionTerms.SummandB].ToString("0.##");
                 break;
             case AdditionCase.SummandASummandBUnknown:
@@ -66,7 +119,44 @@ public class MainSceneController : MonoBehaviour
         }
     }
 
-    private int[] GenerateThreeTerms(int maxSum)
+    private void SetCorrectionLabelsActive(bool isActive)
+    {
+        if (isActive)
+        {
+            labelCorrectionTermA.GetComponent<Text>().text = termValues[(int)AdditionTerms.SummandA].ToString(FormatValues);
+            labelCorrectionTermB.GetComponent<Text>().text = termValues[(int)AdditionTerms.SummandB].ToString(FormatValues);
+            labelCorrectionSum.GetComponent<Text>().text = termValues[(int)AdditionTerms.Sum].ToString(FormatValues);
+        }
+
+        labelCorrectionTermA.gameObject.SetActive(isActive);
+        labelCorrectionTermB.gameObject.SetActive(isActive);
+        labelCorrectionSum.gameObject.SetActive(isActive);
+
+    }
+
+    private void SetDynamicUIElementsInactive()
+    {
+        textTermA.gameObject.SetActive(false);
+        textTermB.gameObject.SetActive(false);
+        textTermResult.gameObject.SetActive(false);
+
+        inputFieldTermA.gameObject.SetActive(false);
+        inputFieldTermB.gameObject.SetActive(false);
+        inputFieldTermResult.gameObject.SetActive(false);
+    }
+
+    private void EnalbeAllInputFieldsInteraction(bool enableInteraction)
+    {
+        inputFieldTermA.enabled = enableInteraction;
+        inputFieldTermB.enabled = enableInteraction;
+        inputFieldTermResult.enabled = enableInteraction;
+
+        inputFieldTermA.image.color = Color.gray;
+        inputFieldTermB.image.color = Color.gray;
+        inputFieldTermResult.image.color = Color.gray;
+    }
+
+    private int[] GenerateThreeAdditionTerms(int maxSum)
     {
         int[] terms = new int[3];
         terms[(int)AdditionTerms.Sum] = UnityEngine.Random.Range(0,maxSum);
@@ -76,42 +166,56 @@ public class MainSceneController : MonoBehaviour
         return terms;
     }
 
-    public void CheckAddition()
+    public void CheckAdditionAndLoadScene()
     {
         if (IsAdditionCorrect())
         {
+            playerData.correctCalculation++;
+        }
+
+        switchScene.LoadScene();
+    }
+
+    public void CheckAddition()
+    {
+        EnalbeAllInputFieldsInteraction(false); //Inputfields are still visible, but interaction is disabled
+
+        if (IsAdditionCorrect())
+        {
             bgimg.color = Color.green;
+            playerData.correctCalculation++;
         }
         else
         {
             bgimg.color = Color.red;
+            SetCorrectionLabelsActive(true);
         }
     }
 
     public bool IsAdditionCorrect()
     {
-        int summandA = -1, summandB =  -1, sum = -1 ;
+        int summandA = -1, summandB = -1, sum = -1;
 
         switch (randomCase)
         {
             case AdditionCase.SummandAUnknown:
-                 summandA = ParseSummandA();
+                 summandA = ParseTerm(AdditionTerms.SummandA);
                  summandB = termValues[(int)AdditionTerms.SummandB];
                  sum = termValues[(int)AdditionTerms.Sum];
                  break;
             case AdditionCase.SummandBUnknown:
                 summandA = termValues[(int)AdditionTerms.SummandA];
-                summandB = ParseSummandB();
+                summandB = ParseTerm(AdditionTerms.SummandB);
                 sum = termValues[(int)AdditionTerms.Sum];
                 break;
             case AdditionCase.SumUnknown:
                 summandA = termValues[(int)AdditionTerms.SummandA];
                 summandB = termValues[(int)AdditionTerms.SummandB];
-                sum = ParseSum();
+                sum = ParseTerm(AdditionTerms.Sum);
                 break;
             case AdditionCase.SummandASummandBUnknown:
-                summandA = ParseSummandA();
-                summandB = ParseSummandB();
+                summandA = ParseTerm(AdditionTerms.SummandA);
+                summandB = ParseTerm(AdditionTerms.SummandB);
                 sum = termValues[(int)AdditionTerms.Sum];
                 break;
         }
@@ -119,143 +223,16 @@ public class MainSceneController : MonoBehaviour
         return (summandA + summandB) == sum ? true : false;
     }
 
-    private AdditionCase GetRandomAdditionCase()
-    {
-        return (AdditionCase)UnityEngine.Random.Range(0, System.Enum.GetValues(typeof(AdditionCase)).Length);
-    }
-
-    private int ParseSummandA()
+    private int ParseTerm(AdditionTerms term)
     {
         try
         {
-            string summandA = additionUIElements[(int)AdditionTerms.SummandA].GetComponent<InputField>().text;
-            Debug.Log("Summand A parse " + summandA);
-            return int.Parse(summandA);
+            string termVal = dynamicUIElements[(int)term].GetComponent<InputField>().text;
+            return int.Parse(termVal);
         }
-        catch
+        catch (System.Exception)
         {
-            Debug.Log("number frmat");
             return -1;
         }
-    }
-
-    private int ParseSummandB()
-    {
-        try
-        {
-            string summandB = additionUIElements[(int)AdditionTerms.SummandB].GetComponent<InputField>().text;
-            Debug.Log("Summand B parse " + summandB);
-            return int.Parse(summandB);
-        }
-        catch
-        {
-            Debug.Log("number frmat");
-            return -1;
-        }
-    }
-
-    private int ParseSum()
-    {
-        try
-        {
-            string sum = additionUIElements[(int)AdditionTerms.Sum].GetComponent<InputField>().text;
-            Debug.Log("Summand Sum parse " + sum);
-            return int.Parse(sum);
-        }
-        catch
-        {
-            Debug.Log("number frmat");
-            return -1;
-        }
-    }
-
-    private void SetAllAdditionUIElementsInactive()
-    {
-        textTermA.gameObject.SetActive(false);
-        textTermB.gameObject.SetActive(false); 
-        textTermResult.gameObject.SetActive(false);
-
-        inputFieldTermA.gameObject.SetActive(false); 
-        inputFieldTermB.gameObject.SetActive(false);
-        inputFieldTermResult.gameObject.SetActive(false);
-    }
-
-    private void SetupUIAddition(AdditionCase curCase)
-    {
-        SetAllAdditionUIElementsInactive();
-        Debug.Log(curCase);
-        switch (curCase)
-        {
-            case AdditionCase.SummandAUnknown:
-                AddAdditionUIElement(AdditionTerms.SummandA, CalulationUIElement.InputField);
-                AddAdditionUIElement(AdditionTerms.SummandB, CalulationUIElement.Text);
-                AddAdditionUIElement(AdditionTerms.Sum, CalulationUIElement.Text);
-                break;
-            case AdditionCase.SummandBUnknown:
-                AddAdditionUIElement(AdditionTerms.SummandA, CalulationUIElement.Text);
-                AddAdditionUIElement(AdditionTerms.SummandB, CalulationUIElement.InputField);
-                AddAdditionUIElement(AdditionTerms.Sum, CalulationUIElement.Text);
-                break;
-            case AdditionCase.SumUnknown:
-                AddAdditionUIElement(AdditionTerms.SummandA, CalulationUIElement.Text);
-                AddAdditionUIElement(AdditionTerms.SummandB, CalulationUIElement.Text);
-                AddAdditionUIElement(AdditionTerms.Sum, CalulationUIElement.InputField);
-                break;
-            case AdditionCase.SummandASummandBUnknown:
-                AddAdditionUIElement(AdditionTerms.SummandA, CalulationUIElement.InputField);
-                AddAdditionUIElement(AdditionTerms.SummandB, CalulationUIElement.InputField);
-                AddAdditionUIElement(AdditionTerms.Sum, CalulationUIElement.Text);
-                break;
-        }
-
-        //Activate elements used in Addition
-        foreach(GameObject elem in additionUIElements)
-        {
-            elem.SetActive(true);
-        }
-
-    }
-
-    private void AddAdditionUIElement(AdditionTerms term, CalulationUIElement inputtype)
-    {
-        switch (term)
-        {
-            case AdditionTerms.SummandA: AddSummandA(inputtype); break;
-            case AdditionTerms.SummandB: AddSummandB(inputtype); break;
-            case AdditionTerms.Sum: AddSum(inputtype);  break;
-        }
-    }
-
-    private void AddSummandB(CalulationUIElement inputtype)
-    {
-        if (inputtype == CalulationUIElement.InputField)
-        {
-            additionUIElements[(int)AdditionTerms.SummandB] = inputFieldTermB.gameObject;
-            return;
-        }
-   
-        additionUIElements[(int)AdditionTerms.SummandB] = textTermB.gameObject;
-    }
-
-    private void AddSummandA(CalulationUIElement inputtype)
-    {
-        if (inputtype == CalulationUIElement.InputField)
-        {
-            additionUIElements[(int)AdditionTerms.SummandA] = inputFieldTermA.gameObject;
-            return;
-        }
-
-        additionUIElements[(int)AdditionTerms.SummandA] = textTermA.gameObject;
-    }
-
-    private void AddSum(CalulationUIElement inputtype)
-    {
-        if (inputtype == CalulationUIElement.InputField)
-        {
-            additionUIElements[(int)AdditionTerms.Sum] = inputFieldTermResult.gameObject;
-            return;
-        }
-
-        additionUIElements[(int)AdditionTerms.Sum] = textTermResult.gameObject;
     }
 }
