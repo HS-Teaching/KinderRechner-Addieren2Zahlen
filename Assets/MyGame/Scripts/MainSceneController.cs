@@ -15,6 +15,8 @@ public class MainSceneController : MonoBehaviour
     [SerializeField] private Image bgimg;
     [SerializeField] private Text labelCorrectionTermA, labelCorrectionTermB, labelCorrectionSum;
     [SerializeField] private Text txtVarialbeAttempts;
+    [SerializeField] private Button checkCalc, nextCalc;
+
 
     //Private variables needed in this script
     private GameObject[] dynamicUIElements; // contains for 3 positions (A, B, Sum) either input field or text depending on AdditionCase
@@ -34,6 +36,8 @@ public class MainSceneController : MonoBehaviour
         playerData.countAttempts++;
         txtVarialbeAttempts.text = playerData.countAttempts.ToString(FormatValues);
         labelPlayerName.text = playerData.playerName;
+
+        nextCalc.gameObject.SetActive(false);
 
         dynamicUIElements = new GameObject[3];
         
@@ -178,6 +182,8 @@ public class MainSceneController : MonoBehaviour
     public void CheckAddition()
     {
         EnalbeAllInputFieldsInteraction(false); //Inputfields are still visible, but interaction is disabled
+        nextCalc.gameObject.SetActive(true);
+        checkCalc.gameObject.SetActive(false);
 
         if (IsAdditionCorrect())
         {
