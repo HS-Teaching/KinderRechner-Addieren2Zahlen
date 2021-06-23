@@ -19,8 +19,8 @@ public class MainSceneController : MonoBehaviour
     //Private variables needed in this script
     private GameObject[] dynamicUIElements; // contains for 3 positions (A, B, Sum) either input field or text depending on AdditionCase
     private int[] termValues; // contains integer values of the 3 terms
-    private AdditionCase randomCase;
-    private const int MaxSum = 10;
+    private AdditionCase randomCase; // randomly chosen case (which fields need to be filled in?)
+    private const int MaxSum = 10; // computations do not exceed this value
     private const string FormatValues = "0.##";
 
     SwitchScene switchScene;
@@ -38,13 +38,13 @@ public class MainSceneController : MonoBehaviour
         dynamicUIElements = new GameObject[3];
         
         SetAddition();
-
     }
 
     private void SetAddition()
     {
         randomCase = GetRandomAdditionCase();
-        randomCase = AdditionCase.SummandAUnknown;
+        // for debugging, use to fix case
+        // randomCase = AdditionCase.SummandAUnknown;
         SetupAdditionUI(randomCase);
         SetGeneratedAdditionValues(randomCase);
         SetCorrectionLabelsActive(false);
@@ -57,7 +57,7 @@ public class MainSceneController : MonoBehaviour
 
     private void SetupAdditionUI(AdditionCase curCase)
     {
-        SetDynamicUIElementsInactive(); //Text and InputFields are invisible
+        SetDynamicUIElementsInactive(); //Text and InputFields are invisible/inactive
 
         switch (curCase)
         {
@@ -131,7 +131,6 @@ public class MainSceneController : MonoBehaviour
         labelCorrectionTermA.gameObject.SetActive(isActive);
         labelCorrectionTermB.gameObject.SetActive(isActive);
         labelCorrectionSum.gameObject.SetActive(isActive);
-
     }
 
     private void SetDynamicUIElementsInactive()
@@ -183,7 +182,6 @@ public class MainSceneController : MonoBehaviour
         if (IsAdditionCorrect())
         {
             bgimg.color = Color.green;
-            playerData.correctCalculation++;
         }
         else
         {

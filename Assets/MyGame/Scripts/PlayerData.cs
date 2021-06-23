@@ -5,7 +5,6 @@ public class PlayerData : ScriptableObject, ISerializationCallbackReceiver
 {
     public string playerName;
     public int correctCalculation;
-    public int maxResult = 10;
     public int countAttempts = 0;
 
     public void OnAfterDeserialize()
@@ -24,7 +23,6 @@ public class PlayerData : ScriptableObject, ISerializationCallbackReceiver
     public void ResetScore()
     {
         correctCalculation = 0;
-        maxResult = 10;
         countAttempts = 0;
     }
 }
