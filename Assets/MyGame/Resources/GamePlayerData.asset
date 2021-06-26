@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 678ea41d2e257ab468d2b60f32cf0118, type: 3}
   m_Name: GamePlayerData
   m_EditorClassIdentifier: 
-  playerName: gsfg
+  playerName: No-Name
   correctCalculation: 0
-  maxResult: 10
-  countAttampts: 10
+  countAttempts: 0

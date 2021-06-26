@@ -1,0 +1,655 @@
+fileFormatVersion: 2
+guid: 6a5ad41781c0eb44cb2297eeebb02894
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6736031838773810837
+    second: kinderadd-correctAttempts_0
+  - first:
+      213: -1326898904775427673
+    second: kinderadd-correctAttempts_1
+  - first:
+      213: -3833907842904991859
+    second: kinderadd-correctAttempts_2
+  - first:
+      213: -6679315846128670699
+    second: kinderadd-correctAttempts_3
+  - first:
+      213: 4532001884543093323
+    second: kinderadd-correctAttempts_4
+  - first:
+      213: 6298296266901320825
+    second: kinderadd-correctAttempts_5
+  - first:
+      213: -4261518917934201466
+    second: kinderadd-correctAttempts_6
+  - first:
+      213: -2098145865218445477
+    second: kinderadd-correctAttempts_7
+  - first:
+      213: 7024972097979983452
+    second: kinderadd-correctAttempts_8
+  - first:
+      213: 6047364184381601439
+    second: kinderadd-correctAttempts_9
+  - first:
+      213: -7790879634179216952
+    second: kinderadd-correctAttempts_10
+  - first:
+      213: -936342429883655055
+    second: kinderadd-correctAttempts_11
+  - first:
+      213: 6805074940366743149
+    second: kinderadd-correctAttempts_12
+  - first:
+      213: 5547479358868071047
+    second: kinderadd-correctAttempts_13
+  - first:
+      213: -6504006146929348044
+    second: kinderadd-correctAttempts_14
+  - first:
+      213: -8927327382137668460
+    second: kinderadd-correctAttempts_15
+  - first:
+      213: -7979532618119376552
+    second: kinderadd-correctAttempts_16
+  - first:
+      213: 6556883383128693864
+    second: kinderadd-correctAttempts_17
+  - first:
+      213: -5756359451706400381
+    second: kinderadd-correctAttempts_18
+  - first:
+      213: -89085243547998755
+    second: kinderadd-correctAttempts_19
+  - first:
+      213: 9082837534700280041
+    second: kinderadd-correctAttempts_20
+  - first:
+      213: -9152236654990207938
+    second: kinderadd-correctAttempts_21
+  - first:
+      213: -1109619335223544632
+    second: kinderadd-correctAttempts_22
+  - first:
+      213: -2869557924739136878
+    second: kinderadd-correctAttempts_23
+  - first:
+      213: 1725773232647298777
+    second: kinderadd-correctAttempts_24
+  - first:
+      213: 3901762000894636432
+    second: kinderadd-correctAttempts_25
+  - first:
+      213: -8469370688627208893
+    second: kinderadd-correctAttempts_26
+  - first:
+      213: -7760745575915157688
+    second: kinderadd-correctAttempts_27
+  - first:
+      213: 4565438996138000433
+    second: kinderadd-correctAttempts_28
+  - first:
+      213: 5583829851123936052
+    second: kinderadd-correctAttempts_29
+  - first:
+      213: -6427668815604126498
+    second: kinderadd-correctAttempts_30
+  - first:
+      213: -9048779700906041933
+    second: kinderadd-correctAttempts_31
+  - first:
+      213: -114283741597443400
+    second: kinderadd-correctAttempts_32
+  - first:
+      213: 8509978757254760158
+    second: kinderadd-correctAttempts_33
+  - first:
+      213: -2830988427007994443
+    second: kinderadd-correctAttempts_34
+  - first:
+      213: 6170138075901202488
+    second: kinderadd-correctAttempts_35
+  - first:
+      213: -6748909710960729129
+    second: kinderadd-correctAttempts_36
+  - first:
+      213: 8836172129782778598
+    second: kinderadd-correctAttempts_37
+  - first:
+      213: 1037887595610147474
+    second: kinderadd-correctAttempts_38
+  - first:
+      213: 1221531504380420897
+    second: kinderadd-correctAttempts_39
+  - first:
+      213: 3128584005565381100
+    second: kinderadd-correctAttempts_40
+  - first:
+      213: -2914501591206864432
+    second: kinderadd-correctAttempts_41
+  - first:
+      213: -8454281978857213693
+    second: kinderadd-correctAttempts_42
+  - first:
+      213: -934534905675227393
+    second: kinderadd-correctAttempts_43
+  - first:
+      213: 2884837356905260654
+    second: kinderadd-correctAttempts_44
+  - first:
+      213: -6876566156343514930
+    second: kinderadd-correctAttempts_45
+  - first:
+      213: -7885624649294388823
+    second: kinderadd-correctAttempts_46
+  - first:
+      213: 2156325463854097557
+    second: kinderadd-correctAttempts_47
+  - first:
+      213: 6548329773283242296
+    second: kinderadd-correctAttempts_48
+  - first:
+      213: 4890850151256163303
+    second: kinderadd-correctAttempts_49
+  - first:
+      213: 9137235896410831482
+    second: kinderadd-correctAttempts_50
+  - first:
+      213: -8470461630049496770
+    second: kinderadd-correctAttempts_51
+  - first:
+      213: -3673097352519005745
+    second: kinderadd-correctAttempts_52
+  - first:
+      213: -4643533228539439650
+    second: kinderadd-correctAttempts_53
+  - first:
+      213: -3514600454639595986
+    second: kinderadd-correctAttempts_54
+  - first:
+      213: 6793701102529321433
+    second: kinderadd-correctAttempts_55
+  - first:
+      213: 3185688855391574696
+    second: kinderadd-correctAttempts_56
+  - first:
+      213: -977755956439185030
+    second: kinderadd-correctAttempts_57
+  - first:
+      213: -8439688276563652091
+    second: kinderadd-correctAttempts_58
+  - first:
+      213: 4335112874222769611
+    second: kinderadd-correctAttempts_59
+  - first:
+      213: 7231017385040760083
+    second: kinderadd-correctAttempts_60
+  - first:
+      213: -5811995262714843898
+    second: kinderadd-correctAttempts_61
+  - first:
+      213: -807882672703509072
+    second: kinderadd-correctAttempts_62
+  - first:
+      213: 6676005524875308258
+    second: kinderadd-correctAttempts_63
+  - first:
+      213: 1113109970741148685
+    second: kinderadd-correctAttempts_64
+  - first:
+      213: -8056421749065647559
+    second: kinderadd-correctAttempts_65
+  - first:
+      213: -6520384207156935406
+    second: kinderadd-correctAttempts_66
+  - first:
+      213: -1210868432475842949
+    second: kinderadd-correctAttempts_67
+  - first:
+      213: -2322084804151427316
+    second: kinderadd-correctAttempts_68
+  - first:
+      213: -1025134114502560523
+    second: kinderadd-correctAttempts_69
+  - first:
+      213: 8631160831740026189
+    second: kinderadd-correctAttempts_70
+  - first:
+      213: -3394328636185445763
+    second: kinderadd-correctAttempts_71
+  - first:
+      213: 6809991346120036120
+    second: kinderadd-correctAttempts_72
+  - first:
+      213: 3335354683566725089
+    second: kinderadd-correctAttempts_73
+  - first:
+      213: -4830020900788200479
+    second: kinderadd-correctAttempts_74
+  - first:
+      213: 3992044128683138335
+    second: kinderadd-correctAttempts_75
+  - first:
+      213: 8421510323623860640
+    second: kinderadd-correctAttempts_76
+  - first:
+      213: -8032121419339549771
+    second: kinderadd-correctAttempts_77
+  - first:
+      213: -7392495114977846077
+    second: kinderadd-correctAttempts_78
+  - first:
+      213: 6630663712002668913
+    second: kinderadd-correctAttempts_79
+  - first:
+      213: 830326601668941805
+    second: kinderadd-correctAttempts_80
+  - first:
+      213: 7362289500146327726
+    second: kinderadd-correctAttempts_81
+  - first:
+      213: -7371338827205983205
+    second: kinderadd-correctAttempts_82
+  - first:
+      213: -559354912198766621
+    second: kinderadd-correctAttempts_83
+  - first:
+      213: 4586037867733415319
+    second: kinderadd-correctAttempts_84
+  - first:
+      213: -5086456977641047442
+    second: kinderadd-correctAttempts_85
+  - first:
+      213: 5769597211229198249
+    second: kinderadd-correctAttempts_86
+  - first:
+      213: -2257892986720364944
+    second: kinderadd-correctAttempts_87
+  - first:
+      213: 8282229534039518209
+    second: kinderadd-correctAttempts_88
+  - first:
+      213: -3010016869944294285
+    second: kinderadd-correctAttempts_89
+  - first:
+      213: -788414377911525714
+    second: kinderadd-correctAttempts_90
+  - first:
+      213: -2285121241624658816
+    second: kinderadd-correctAttempts_91
+  - first:
+      213: 7119391093095781985
+    second: kinderadd-correctAttempts_92
+  - first:
+      213: 6412131976346304873
+    second: kinderadd-correctAttempts_93
+  - first:
+      213: 2846049613068036714
+    second: kinderadd-correctAttempts_94
+  - first:
+      213: 8766625193766159161
+    second: kinderadd-correctAttempts_95
+  - first:
+      213: -8982954564471213462
+    second: kinderadd-correctAttempts_96
+  - first:
+      213: 2290664851129463400
+    second: kinderadd-correctAttempts_97
+  - first:
+      213: 229879018506172084
+    second: kinderadd-correctAttempts_98
+  - first:
+      213: 7162008640310772253
+    second: kinderadd-correctAttempts_99
+  - first:
+      213: -1267278123726441929
+    second: kinderadd-correctAttempts_100
+  - first:
+      213: 8599205846508643777
+    second: kinderadd-correctAttempts_101
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kinderadd-correctAttempts_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 8162
+        width: 894
+        height: 817
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59695d1b4413b7d50800000000000000
+      internalID: 6736031838773810837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-correctAttempts_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7447
+        width: 899
+        height: 716
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a97100f978e59de0800000000000000
+      internalID: -1326898904775427673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-correctAttempts_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 6596
+        width: 894
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87501a31293bcac0800000000000000
+      internalID: -3833907842904991859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-correctAttempts_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5781
+        width: 899
+        height: 729
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518ecd060ad4e43a0800000000000000
+      internalID: -6679315846128670699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-correctAttempts_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4965
+        width: 894
+        height: 732
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a8791d3b7e4ee30800000000000000
+      internalID: 4532001884543093323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-correctAttempts_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4110
+        width: 899
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97472deb51b086750800000000000000
+      internalID: 6298296266901320825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-correctAttempts_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3300
+        width: 899
+        height: 731
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685cce46f1b0cd4c0800000000000000
+      internalID: -4261518917934201466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-correctAttempts_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2453
+        width: 899
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f23b8b373e1e2e0800000000000000
+      internalID: -2098145865218445477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-correctAttempts_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1638
+        width: 895
+        height: 727
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56a02937e6bd7160800000000000000
+      internalID: 7024972097979983452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-correctAttempts_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 822
+        width: 899
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f963c757fad8ce350800000000000000
+      internalID: 6047364184381601439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-correctAttempts_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 899
+        height: 723
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c92ce4204c31e390800000000000000
+      internalID: -7790879634179216952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

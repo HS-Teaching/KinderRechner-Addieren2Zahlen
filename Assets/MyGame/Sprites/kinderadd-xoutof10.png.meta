@@ -1,0 +1,388 @@
+fileFormatVersion: 2
+guid: 3f8fad95f0ad8884ab06dc6383333975
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6852000483613637256
+    second: kinderadd-xoutof10_0
+  - first:
+      213: -4529196533540295817
+    second: kinderadd-xoutof10_1
+  - first:
+      213: 3515996760305599196
+    second: kinderadd-xoutof10_2
+  - first:
+      213: 7441907303627388033
+    second: kinderadd-xoutof10_3
+  - first:
+      213: -3054568349233863500
+    second: kinderadd-xoutof10_4
+  - first:
+      213: 2896276501416264581
+    second: kinderadd-xoutof10_5
+  - first:
+      213: -4615162813491155971
+    second: kinderadd-xoutof10_6
+  - first:
+      213: 7330343323606129001
+    second: kinderadd-xoutof10_7
+  - first:
+      213: 3853953732181798672
+    second: kinderadd-xoutof10_8
+  - first:
+      213: 4310522584871256112
+    second: kinderadd-xoutof10_9
+  - first:
+      213: -7422418896332756661
+    second: kinderadd-xoutof10_10
+  - first:
+      213: -4033691672882897840
+    second: kinderadd-xoutof10_11
+  - first:
+      213: -3750133085460005985
+    second: kinderadd-xoutof10_12
+  - first:
+      213: -6853705849776453600
+    second: kinderadd-xoutof10_13
+  - first:
+      213: -8039250665684904118
+    second: kinderadd-xoutof10_14
+  - first:
+      213: 4961500951778445406
+    second: kinderadd-xoutof10_15
+  - first:
+      213: 1479075448293015764
+    second: kinderadd-xoutof10_16
+  - first:
+      213: -1799416404901772627
+    second: kinderadd-xoutof10_17
+  - first:
+      213: 1296901506120576961
+    second: kinderadd-xoutof10_18
+  - first:
+      213: -8118615598644953543
+    second: kinderadd-xoutof10_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kinderadd-xoutof10_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1236
+        width: 231
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a789ae222371f50800000000000000
+      internalID: 6852000483613637256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-xoutof10_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1098
+        width: 231
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b666cdfbf0521c0800000000000000
+      internalID: -4529196533540295817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-xoutof10_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 961
+        width: 231
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd28079cc645bc030800000000000000
+      internalID: 3515996760305599196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-xoutof10_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 819
+        width: 231
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18478148347f64760800000000000000
+      internalID: 7441907303627388033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-xoutof10_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 686
+        width: 231
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4a3c9254efb95d0800000000000000
+      internalID: -3054568349233863500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-xoutof10_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 545
+        width: 231
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5834a360224a13820800000000000000
+      internalID: 2896276501416264581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-xoutof10_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 405
+        width: 231
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb64419fd5a3ffb0800000000000000
+      internalID: -4615162813491155971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-xoutof10_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 275
+        width: 231
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969133d3a6c9ab560800000000000000
+      internalID: 7330343323606129001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-xoutof10_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 231
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fac73108efb7530800000000000000
+      internalID: 3853953732181798672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kinderadd-xoutof10_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 229
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030cc8be37d02db30800000000000000
+      internalID: 4310522584871256112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
