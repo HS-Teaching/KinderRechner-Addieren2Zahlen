@@ -26,6 +26,7 @@ WebGL Export: be sure to disable in the player settings the compression Format. 
 
 ### Third party material: 
 - Font: https://fonts.google.com/specimen/Kirang+Haerang?preview.text=Susanne&preview.text_type=custom#standard-styles
+- Button Press sound: https://freesound.org/s/171697/
 
 ### Limitations: 
 - The game works functionally, the visual design has yet to be done. 
