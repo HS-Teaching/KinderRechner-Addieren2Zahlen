@@ -31,6 +31,7 @@ In Unity installed via Package Manager: 2D Sprite (for slicing sprites), shader 
 - Sound Button Press: https://freesound.org/s/171697/
 - Sound Win: https://freesound.org/s/320887/
 - Sound Failure: https://freesound.org/s/342756/
+- Quill shader: https://quill.fb.com/developers/how-to-use-quill-fbx-in-unity
 
 ### Limitations: 
 - The game works functionally, the visual design has yet to be done. 
