@@ -12,7 +12,7 @@ The task is to use this requirement to independently create a microgame for brow
 3. Processing of individual steps
 4. Release for testing (note in readme)
 
-### WebGL Build:
+### WebGL Build: Ready for Testing!!
 https://hs-teaching.github.io/KinderRechner-Addieren2Zahlen/
 
 ### Video:
