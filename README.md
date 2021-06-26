@@ -15,6 +15,9 @@ The task is to use this requirement to independently create a microgame for brow
 ### WebGL Build:
 https://hs-teaching.github.io/KinderRechner-Addieren2Zahlen/
 
+### Video:
+https://user-images.githubusercontent.com/28704310/123517778-31e47080-d6a3-11eb-9544-4ec4e0052b7d.mp4
+
 ### Development platform: 
 Windows 10, Unity 2020.1.5f1, Visual Studio 2019
 
@@ -33,7 +36,8 @@ Desktop Browsers; WebGL reference resolution 960x600
 ### Necessary setup/execution steps: 
 WebGL Export: be sure to disable in the player settings the compression Format. https://github.com/HTL-SBG/FAQIssuesUnityVSGitGitHub/issues/11
 
-In Unity installed via Package Manager: 2D Sprite (for slicing sprites)
+- In Unity installed via Package Manager: 2D Sprite (for slicing sprites)
+- HandBrake (Open Source Video transcoder, downsizing video https://handbrake.fr/rotation.php?file=HandBrake-1.3.3-x86_64-Win_GUI.exe)
 
 ### Third party material: 
 - Font: https://fonts.google.com/specimen/Kirang+Haerang?preview.text=Susanne&preview.text_type=custom#standard-styles
