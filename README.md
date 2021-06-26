@@ -25,7 +25,7 @@ Desktop Browsers; WebGL reference resolution 960x600
 WebGL Export: be sure to disable in the player settings the compression Format. https://github.com/HTL-SBG/FAQIssuesUnityVSGitGitHub/issues/11
 
 ### Third party material: 
-(if used Fonts, Sounds, Music, Graphics, Materials, Code etc.)
+- Font: https://fonts.google.com/specimen/Kirang+Haerang?preview.text=Susanne&preview.text_type=custom#standard-styles
 
 ### Limitations: 
 - The game works functionally, the visual design has yet to be done. 
