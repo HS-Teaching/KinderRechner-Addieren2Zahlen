@@ -24,10 +24,10 @@ Windows 10, Unity 2020.1.5f1, Visual Studio 2019
 ### Target platform: 
 Desktop Browsers; WebGL reference resolution 960x600 
 
-### First prototype
+### Second Testing Prototype: Functional + first Visual, Audio setup (Testing with target group)
 ![kinderadd-pt1](https://user-images.githubusercontent.com/28704310/123516328-cc40b600-d69b-11eb-9bec-31532a22457c.JPG)
 
-### Functional working
+### First Testing Prototype: Functional working (People like, family, colleques, etc.)
 ![kinderadd-functional](https://user-images.githubusercontent.com/28704310/123515937-d95ca580-d699-11eb-8c1a-10fe778aae99.JPG)
 
 ### Concept
