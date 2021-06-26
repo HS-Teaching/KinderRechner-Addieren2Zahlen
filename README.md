@@ -24,6 +24,8 @@ Desktop Browsers; WebGL reference resolution 960x600
 ### Necessary setup/execution steps: 
 WebGL Export: be sure to disable in the player settings the compression Format. https://github.com/HTL-SBG/FAQIssuesUnityVSGitGitHub/issues/11
 
+In Unity installed via Package Manager: 2D Sprite (for slicing sprites), shader graph (for quill material)
+
 ### Third party material: 
 - Font: https://fonts.google.com/specimen/Kirang+Haerang?preview.text=Susanne&preview.text_type=custom#standard-styles
 - Sound Button Press: https://freesound.org/s/171697/
