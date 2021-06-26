@@ -12,19 +12,22 @@ The task is to use this requirement to independently create a microgame for brow
 3. Processing of individual steps
 4. Release for testing (note in readme)
 
+### WebGL Build:
+https://hs-teaching.github.io/KinderRechner-Addieren2Zahlen/
+
 ### Development platform: 
 Windows 10, Unity 2020.1.5f1, Visual Studio 2019
 
 ### Target platform: 
 Desktop Browsers; WebGL reference resolution 960x600 
 
-### Concept
-![kinderaddierer-v3-vereinfacht-concept](https://user-images.githubusercontent.com/28704310/123055170-e497a300-d405-11eb-863f-65851a63aadf.jpg)
+### First prototype
+![kinderadd-pt1](https://user-images.githubusercontent.com/28704310/123516328-cc40b600-d69b-11eb-9bec-31532a22457c.JPG)
 
 ### Functional working
-![kinderaddierer-v3-vereinfacht-concept](https://user-images.githubusercontent.com/28704310/123055170-e497a300-d405-11eb-863f-65851a63aadf.jpg)
+![kinderadd-functional](https://user-images.githubusercontent.com/28704310/123515937-d95ca580-d699-11eb-8c1a-10fe778aae99.JPG)
 
-### First prototype
+### Concept
 ![kinderaddierer-v3-vereinfacht-concept](https://user-images.githubusercontent.com/28704310/123055170-e497a300-d405-11eb-863f-65851a63aadf.jpg)
 
 ### Necessary setup/execution steps: 
